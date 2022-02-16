@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ("partials/main-layout") %>
+  <body>
+    
+  <%- include ("partials/nav") %>
+     
+<div class="text-center center-div pb-3" id="signup">
+  <div class="container w-25 border py-1 collogin">
+    <div class="title pb-4">
+      <h2 class="font-weight-bold">Register Form</h2>
+      <span>Only for new user</span>
+    </div>
+    <form action="/signup" method="POST">
+      <div class="form-group">
+        <small class="form-text text-muted text-left">Input your email</small>
+        <input type="email" class="form-control" placeholder="email" name="email" />
+      </div>
+      <div class="form-group">
+        <small class="form-text text-muted text-left">Input your password</small>
+        <input type="password" class="form-control" name="password" placeholder="password" />
+      </div>
+      <div class="form-group">
+        <small class="form-text text-muted text-left">Input your username</small>
+        <input type="text" class="form-control" name="username" placeholder="username" />
+      </div>
+      <div class="form-group">
+        <small class="form-text text-muted text-left">Input your full name</small>
+        <input type="text" class="form-control" name="fullname" placeholder="your name" />
+      </div>
+      <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+    </form>
+  </div>
+</div>
+<footer class="text-center text-lg-start">
+  <div class="text-center p-1">
+    <p>
+      © 2021 Copyright -
+      <a class="fw-bold text-danger" href="/home">AdSandsConsulting</a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
